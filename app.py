@@ -163,13 +163,16 @@ with tab1:
             meta = json.loads((c / "metadatos.json").read_text(encoding="utf-8"))
             st.caption(f"{meta.get('documento')} · Skill v{meta.get('skill_version', '0.1')} · {meta.get('modelo')} · "
                        f"{meta.get('fecha', '')}")
-            st.download_button("Descargar carpeta (.zip)", zip_de(c), f"{ver}.zip", key="sk01_zip")
-    if nombres:
-        c = DIR_RES_SK01 / st.session_state.get("sk01_sel", nombres[0])
-        with st.expander("Informe", expanded=True):
-            st.markdown((c / "informe.md").read_text(encoding="utf-8"))
-        with st.expander("Verificación automática"):
-            st.markdown((c / "verificacion.md").read_text(encoding="utf-8"))
+            resultado = next((l for l in (c / "verificacion.md").read_text(encoding="utf-8").splitlines()
+                              if l.startswith("**Resultado:**")), "")
+            if resultado:
+                st.info("Verificación automática: " + resultado.removeprefix("**Resultado:**").strip())
+            b1, b2, b3 = st.columns(3)
+            b1.download_button("Informe (.md)", (c / "informe.md").read_bytes(), f"informe_{ver[:40]}.md",
+                               key="sk01_inf")
+            b2.download_button("Verificación (.md)", (c / "verificacion.md").read_bytes(),
+                               f"verificacion_{ver[:40]}.md", key="sk01_ver_md")
+            b3.download_button("Todo (.zip)", zip_de(c), f"{ver}.zip", key="sk01_zip")
 
 # ---------- 2. Agente de auditoría ----------
 
@@ -224,7 +227,7 @@ with tab2:
             col.metric(etiqueta, cont.get(k, 0))
         m[5].metric("Con alerta", sum(f.get("Alerta del verificador", "—") != "—" for f in filas))
 
-        sub1, sub2, sub3, sub4 = st.tabs(["Lista de verificación", "Hallazgos y revisión", "Planes de acción", "Informe"])
+        sub1, sub2, sub3 = st.tabs(["Lista de verificación", "Hallazgos y revisión", "Planes de acción"])
         with sub1:
             solo_alertas = st.checkbox("Mostrar solo filas con alerta del verificador")
             vista = [f for f in filas if not solo_alertas or f.get("Alerta del verificador", "—") != "—"]
@@ -260,12 +263,9 @@ with tab2:
                 st.success("Revisión guardada en revision_equipo.csv (las propuestas del agente no se modifican).")
         with sub3:
             st.dataframe(leer_csv(c / "plan_accion.csv"), use_container_width=True, hide_index=True)
-        with sub4:
-            st.markdown((c / "informe_auditoria.md").read_text(encoding="utf-8"))
-            with st.expander("Verificación automática"):
-                st.markdown((c / "verificacion.md").read_text(encoding="utf-8"))
-
-        d1, d2, d3 = st.columns(3)
+        d1, d2, d3, d4 = st.columns(4)
+        d4.download_button("Informe de auditoría (.md)", (c / "informe_auditoria.md").read_bytes(),
+                           f"informe_{meta['plan']['codigo']}.md")
         d1.download_button("Descargar todo (.zip)", zip_de(c), f"{ver}.zip")
         d2.download_button("Lista de verificación (CSV para GESTITEL)", (c / "lista_verificacion.csv").read_bytes(),
                            "lista_verificacion.csv")

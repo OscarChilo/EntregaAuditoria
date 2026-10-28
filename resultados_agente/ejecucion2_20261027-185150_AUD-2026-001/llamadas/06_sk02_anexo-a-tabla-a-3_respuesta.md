@@ -1,0 +1,17 @@
+# SK-02 — Evaluación de evidencias · Lote Anexo A — Tabla A.3
+
+| ID | Requisito | Elementos | Resultado | Evidencia encontrada | Hallazgo propuesto |
+|---|---|---|---|---|---|
+| A.3.8 | Control «Identity management» (Tabla A.3) | E1 Respalda ← "A.3.8 Gestión de identidades, A.3.23 Autenticación segura (doble factor)" [SIM-PIMS-05 §3] | Conforme | SIM-PIMS-05 §3 y SIM-PIMS-14 §2 documentan la gestión de identidades y su vinculación con el control de acceso y doble factor. | — |
+| A.3.10 | Control «Addressing information security within supplier agreements» (Tabla A.3) | E1 Respalda ← "A.3.10 Seguridad en acuerdos con proveedores" [SIM-PIMS-05 §3] · E2 Respalda ← "A.1.2.7 Contratos con encargados, A.3.10 Seguridad en acuerdos con proveedores" [SIM-PIMS-05 §3] | Conforme | SIM-PIMS-05 §3 e Identifican los requisitos de seguridad en acuerdos con proveedores según el tipo de relación con encargados. | — |
+| A.3.11 | Control «Information security incident management planning and preparation» (Tabla A.3) | E1 Respalda ← "Establecer cómo se reportan, evalúan y atienden los incidentes que afectan la seguridad de la información o los datos personales (controles A.3.11 y A.3.12 de ISO/IEC 27701:2025)." [SIM-PIMS-11 §1] · E2 Respalda ← "Cualquier trabajador o estudiante que detecte un incidente lo reporta de inmediato: - en el módulo Incidentes de la plataforma PIMS, o - al correo incidentes@unsa-simulada.example, o - por teléfono a la mesa de ayuda de la OUIS (anexo simulado 3100)." [SIM-PIMS-11 §3] | Conforme | SIM-PIMS-11 §1 y §3 definen el proceso de gestión de incidentes de seguridad, los roles y los canales de comunicación y planificación. | — |
+| A.3.12 | Control «Response to information security incidents» (Tabla A.3) | E1 Respalda ← "1. Registro: se registra el incidente en el módulo Incidentes con fecha, descripción, sistemas y datos afectados. 2. Clasificación: se clasifica la severidad... 3. Contención: se aíslan los equipos o se bloquean las cuentas... 4. Erradicación y recuperación... 5. Lecciones aprendidas..." [SIM-PIMS-11 §4] | Conforme | SIM-PIMS-11 §4 describe el procedimiento operativo de respuesta a incidentes de seguridad y su tratamiento. | — |
+| A.3.14 | Control «Protection of records» (Tabla A.3) | E1 Respalda ← "A.3.14 Protección de registros, A.1.4.9 Eliminación" [SIM-PIMS-05 §3] | Conforme | SIM-PIMS-05 §3 y SIM-PIMS-08 §4 abordan la protección, almacenamiento, preservación y disposición de los registros y documentos. | — |
+| A.3.23 | Control «Secure authentication» (Tabla A.3) | E1 Respalda ← "A.3.23 Autenticación segura (doble factor)" [SIM-PIMS-05 §3] · E2 Respalda ← "Implementar doble factor en el sistema académico (riesgo R-01)" [SIM-PIMS-14 §2] | Conforme | SIM-PIMS-05 §3 y SIM-PIMS-14 §2 especifican la tecnología de autenticación segura de doble factor frente a restricciones de acceso. | — |
+| A.3.26 | Control «Use of cryptography» (Tabla A.3) | E1 Respalda ← "A.3.26 Criptografía" [SIM-PIMS-05 §3] · E2 Falta [SIM-PIMS-05] | O | SIM-PIMS-05 §3 e Identifican medidas concretas de criptografía para la transmisión de datos, pero falta detallar formalmente las reglas específicas de gestión de claves criptográficas. | SIM-PIMS-05 §3 omite la descripción de las reglas de criptografía y gestión de claves asociadas al control A.3.26 E2. |
+
+## Observaciones del agente
+
+- Ninguna
+
+--- FIN SK-02 ---

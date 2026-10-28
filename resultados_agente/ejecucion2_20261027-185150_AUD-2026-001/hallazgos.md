@@ -1,0 +1,12 @@
+# Hallazgos — AUD-2026-001
+
+> Propuesta del agente: clasificación, responsables y fechas los confirma el equipo auditor.
+
+| N.° | Clasificación | Requisitos | Descripción | Evidencia | Revisión del auditor |
+|---|---|---|---|---|---|
+| H-01 | N | 7.2 E4 | En SIM-PIMS-07 se observó que no se evalúa la eficacia de las acciones de capacitación sino solo la asistencia. El requisito 7.2 exige determinar y asegurar la competencia del personal que influye en el desempeño de privacidad. | "En 2026 no se toman exámenes ni se evalúa después si la capacitación mejoró el desempeño: se considera suficiente la asistencia completa al curso." [SIM-PIMS-07 §3] |  |
+| H-02 | O | 8.3 E1 | En SIM-PIMS-05 se observó que el plan de tratamiento se encuentra pendiente de aprobación y varios tratamientos de riesgos presentan avances parciales. El requisito 8.3 exige implementar el plan de tratamiento de riesgos de privacidad. | "Ejecutar el plan de tratamiento SIM-PIMS-05" [SIM-PIMS-06 §2] |  |
+| H-03 | N | 9.3.2 E3 | En SIM-PIMS-13 se observó que el acta de revisión por la dirección omite los cambios en las necesidades de las partes interesadas. El requisito 9.3.2 exige que la revisión por la dirección incluya entradas mínimas. | SIM-PIMS-13 §3 no menciona los cambios en las necesidades de las partes interesadas. |  |
+| H-04 | O | 10.2 E6 | En SIM-PIMS-14 se observó que no se registra la verificación de eficacia de las acciones correctivas implementadas en los registros de no conformidades. El requisito 10.2 exige ante una no conformidad, reaccionar, analizar causas, actuar y verificar la eficacia. | SIM-PIMS-14 §2 no registra la verificación de eficacia de las acciones correctivas implementadas. |  |
+| H-05 | O | A.1.4.9 E2 | En SIM-PIMS-08 se observó que falta una política o procedimiento documentado específico para la eliminación de datos personales en los procesos de negocio. El control A.1.4.9 exige tener políticas, procedimientos o mecanismos documentados para la eliminación. | SIM-PIMS-08 §4 no menciona políticas o procedimientos específicos para la eliminación de datos personales en los procesos de negocio. |  |
+| H-06 | O | A.3.26 E2 | En SIM-PIMS-05 se observó que el documento omite la descripción de las reglas de criptografía y gestión de claves asociadas al control A.3.26. El control A.3.26 exige establecer reglas para el uso de criptografía. | SIM-PIMS-05 §3 no describe las reglas de criptografía y gestión de claves asociadas al control A.3.26. |  |

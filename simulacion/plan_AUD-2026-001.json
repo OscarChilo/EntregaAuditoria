@@ -1,0 +1,15 @@
+{
+  "codigo": "AUD-2026-001",
+  "tipo": "I",
+  "nombre": "Auditoría interna del PIMS 2026",
+  "organizacion": "Universidad Nacional de San Agustín de Arequipa (evidencias de demostración simuladas)",
+  "objetivo": "Verificar la conformidad del PIMS con ISO/IEC 27701:2025 antes de la revisión por la dirección",
+  "alcance": "Procesos del alcance del PIMS (SIM-PIMS-01): admisión, matrícula, bienestar, personal, biblioteca, bolsa de trabajo y Centro de Idiomas; revisión documental",
+  "criterios": "Cláusulas 4 a 10 y controles del Anexo A de ISO/IEC 27701:2025 (los 78 controles); política SIM-PIMS-02",
+  "inicio": "2026-11-09",
+  "fin": "2026-11-20",
+  "auditor_lider": "Auditor líder (por designar)",
+  "equipo": "Equipo auditor interno, con apoyo del agente de evidencias y auditoría",
+  "destinatarios": "Comité de Privacidad y Seguridad de la Información y dueños de proceso",
+  "anexo_a": "completo"
+}

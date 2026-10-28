@@ -1,0 +1,26 @@
+{
+  "modelo": "gemini-3.5-flash-lite",
+  "finish_reason": "STOP",
+  "max_output_tokens": 65536,
+  "uso": {
+    "entrada": 34081,
+    "salida": 10676,
+    "razonamiento": null,
+    "total": 44757
+  },
+  "intentos_fallidos": [],
+  "documento": "Política de Privacidad - UNSA (Protección de Datos Personales)",
+  "archivo": "Protección de Datos Personales - UNSA.pdf",
+  "fuente": "https://www.unsa.edu.pe/servicios/politica-proteccion-datos.html (PDF impreso el 14/10/2026)",
+  "etiqueta": "prueba9-unsa-v051",
+  "skill_version": "0.5.1",
+  "instrucciones": "vigentes",
+  "conocimiento": "catálogo completo (contexto completo, sin RAG)",
+  "plantilla": true,
+  "lista_titular": true,
+  "paginas": 6,
+  "catalogo_version": "0.6.1",
+  "catalogo_estado": "validación humana en curso (7 de 18 comprobaciones humanas: V-01 a V-03 y V-15 a V-18; V-04 a V-14 solo con revisión de IA; ver §6). El catálogo NO está validado; se usa como versión de trabajo del prototipo y puede corregirse durante las pruebas.",
+  "redacciones": [],
+  "fecha": "2026-10-21T18:14:26"
+}
